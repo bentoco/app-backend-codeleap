@@ -6,6 +6,7 @@ To run the application locally, follow these steps:
 
 ### 1.1 Prerequisites
 - Docker installed on your local machine
+- Python installed on your local machine
 
 ### 1.2 Setup Docker Environment
 - Navigate to the `locals` folder in your project directory.
@@ -62,6 +63,24 @@ Run Django migrations to create necessary database tables:
 ```bash
 python manage.py migrate
 ```
+
+### 1.5 Install Requirements
+- Navigate to your project directory in the terminal.
+- Install the required Python packages listed in the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 1.6 Running locally
+
+To run the Django application locally, execute the following command in your terminal:
+
+```bash
+python manage.py runserver
+```
+
+This will start the Django development server, and you can access your application in a web browser at http://localhost:8000/.
 
 ## 2. Overview of API View
 The CareerListCreateAPIView and CareerRetrieveUpdateDestroyAPIView provide endpoints to manage career posts.
