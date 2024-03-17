@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: 'postgres:14.2-alpine'
+    environment:
+      POSTGRES_USER: 'root'
+      POSTGRES_PASSWORD: 'root'
+      POSTGRES_DB: 'codeleap'
+    ports:
+      - '5432:5432'
+    networks:
+      - codeleap-network
+
+networks:
+  codeleap-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.1.0/24
