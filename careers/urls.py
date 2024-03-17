@@ -1,7 +1,8 @@
+# urls.py
 from django.urls import path
-
-from . import views
+from .views import CareerListCreateAPIView, CareerRetrieveUpdateDestroyAPIView
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path('', CareerListCreateAPIView.as_view(), name='career-list-create'),
+    path('<int:pk>/', CareerRetrieveUpdateDestroyAPIView.as_view(), name='career-detail'),
 ]
