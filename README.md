@@ -86,19 +86,19 @@ This will start the Django development server, and you can access your applicati
 The CareerListCreateAPIView and CareerRetrieveUpdateDestroyAPIView provide endpoints to manage career posts.
 
 ### 2.1 CareerListCreateAPIView
-- URL: /careers/
-- Methods: GET (list all career posts), POST (create a new career post)
+- URL: `/careers/`
+- Methods: **GET** (list all career posts), **POST** (create a new career post)
 - Pagination: 10 posts per page, with a maximum of 100 posts per page
 - Example Usage:
-  - GET: Retrieve all career posts with pagination.
-  - POST: Create a new career post by sending username, title, and content data in the request body.
+  - **GET**: Retrieve all career posts with pagination.
+  - **POST**: Create a new career post by sending username, title, and content data in the request body.
 
 ### 2.2 CareerRetrieveUpdateDestroyAPIView
-- URL: /careers/<post_id>/
-- Methods: PATCH (update a specific career post), DELETE (delete a specific career post)
+- URL: `/careers/<post_id>/`
+- Methods: **PATCH** (update a specific career post), **DELETE** (delete a specific career post)
 - Example Usage:
-  - PATCH: Update a specific career post by its ID with new title and content data.
-  - DELETE: Delete a specific career post by its ID.
+  - **PATCH**: Update a specific career post by its ID with new title and content data.
+  - **DELETE**: Delete a specific career post by its ID.
 
 ### 3. Running Unit Tests
 
